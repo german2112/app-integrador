@@ -1,0 +1,15 @@
+<nav class="navbar navbar-default">
+    <div class="navbar-header">
+        <h3>VR GAME</h3>
+    </div>
+    <ul>
+        <a [routerLink]="['/inicio']"><button type="button" class="btn btn-default navbar-btn">Inicio</button></a>
+        <a href="#seccion-acercaDe"><button type="button" class="btn btn-default navbar-btn">Acerca de</button></a>
+        <a href="#seccion-caracteristicas"><button type="button" class="btn btn-default navbar-btn">Características</button></a>
+        <a [routerLink]="['/login']"><button type="button" class="btn btn-default navbar-btn" *ngIf="!isLogin">Iniciar Sesión</button></a>
+        <a [routerLink]="['/registrarse']"><button type="button" class="btn btn-default navbar-btn" *ngIf="!isLogin">Registrarse</button></a>
+        <a [routerLink]="['/leaderboards']"><button type="button" class="btn btn-default navbar-btn" *ngIf="isLogin">LeaderBoards</button></a>
+        <a [routerLink]="['/perfil']"><button type="button" class="btn btn-default navbar-btn" *ngIf="isLogin">Perfil</button></a>
+        <a [routerLink]="['/login']"><button type="button" class="btn btn-default navbar-btn" (click)="onClickLogout()" *ngIf="isLogin">Cerrar sesión</button></a>
+    </ul>
+</nav>

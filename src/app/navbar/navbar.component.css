@@ -1,0 +1,14 @@
+/*Nav bar*/
+.navbar-default{
+    position: fixed;
+    width: 100%;
+    left: 0%;
+    border-bottom: solid 1px #e9ecef;
+    background-color:  rgb(229,233,242);
+    z-index: 1000;
+    color: rgb(85, 90, 95);
+}
+
+.navbar-default ul{
+    margin: 0;
+}

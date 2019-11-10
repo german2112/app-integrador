@@ -1,0 +1,19 @@
+body{
+    height: 100vh;
+    background-color: #e9ecef;
+}
+
+
+
+.navbar-default ul{
+    margin: 0;
+}
+
+/*login container*/
+.jumbotron{
+    background-color: white;
+}
+
+.jumbotron h3{
+    text-align: center;
+}

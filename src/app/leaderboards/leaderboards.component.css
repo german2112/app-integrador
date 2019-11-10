@@ -1,0 +1,51 @@
+
+.navbar-default ul{
+    margin: 0;
+}
+
+/*Titulo leaderboards*/
+.titulo-leaderboards{
+    height: 20vh;
+    padding-top:10%;
+}
+
+.columna-opciones {
+    text-align: center;
+    position: relative;
+}
+
+.columna-opciones select{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 25%;
+}
+
+.columna-titulo {
+    
+    position: relative;
+}
+
+.columna-titulo h2{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+/*TABLA LEADERBOARDS*/
+.tabla-leaderboards{
+    height: 100%;
+    width: 100%;
+    padding-top:5%;
+}
+.table{
+    margin-left: 12px;
+}
+.contenido-tabla{
+    width: 50%;
+    height: 50%;
+}

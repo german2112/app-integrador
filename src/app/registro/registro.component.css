@@ -1,0 +1,28 @@
+body{
+    height: 100vh;
+    background-color: #e9ecef;
+}
+
+/*login container*/
+.jumbotron{
+    background-color: white;
+}
+
+.jumbotron h3{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+    font-size: 10px;
+    margin-bottom: 0;
+    margin-top:0.5rem;
+}
+a{
+    text-align: center;
+    font-size:10px;
+}
+
+.opciones{
+    text-align: center;
+}

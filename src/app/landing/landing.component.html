@@ -1,0 +1,98 @@
+<body>
+    <div class="container-fluid top-landing" id="seccion-inicio">
+        <app-navbar></app-navbar>
+        <div class="row vertical-center">
+          <div class="col">
+            <h1>El juego en realidad virtual donde <br> aprendes jugando.</h1>
+          </div> 
+        </div>
+        <div class="row vertical-center button">
+          <div class="col">
+              <a [routerLink]="['/login']"><button type="button" class="btn btn-primary start-button">Iniciar</button></a>
+          </div>
+        </div>
+    </div>
+    <div class="container-fluid" id="seccion-caracteristicas">
+      <div class="row titulo-caracteristicas">
+        <h2>Características</h2>
+      </div>
+      <div class="row container-caracteristicas">
+        <div class="col-sm">
+          <div class = caja>
+            <div class="row niveles-caja">
+                <img src="assets/img/robot5.jpg" class="rounded-circle" alt="image">
+            </div>
+            <div class="row niveles-caja intermedio">
+              <p>Realidad Virtual</p>
+            </div>
+            <div class="row niveles-caja">
+              <p>Experimenta la experiencia de un juego en realidad virtual con el objetivo de enseñar a cualquier persona sobre temas educativos mientrasse divierten en emocionantes peleas de robots.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class = caja>
+              <div class="row niveles-caja">
+                  <img src="assets/img/robot3.jpg" class="rounded-circle" alt="image">
+                </div>
+                <div class="row niveles-caja intermedio">
+                  <p>Programación gráfica</p>
+                </div>
+                <div class="row niveles-caja">
+                  <p>Se parte de una de las tendencias más requeridas de los últimos años. Aprende a programar de una manera divertida uniendo bloques que desenlazan un emocionante resultado.</p>
+                </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class = caja>
+              <div class="row niveles-caja">
+                  <img src="assets/img/robot4.jpg" class="rounded-circle" alt="image">
+              </div>
+              <div class="row niveles-caja intermedio">
+                <p>Multijugador</p>
+              </div>
+              <div class="row niveles-caja">
+                <p>La diversión siempre es mejor con amigos por lo que diviértete luchando con los robots de tus amigos escalando para ser el jugador con la puntuación más alta.</p>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid container-acerca-de">
+    <div class="container" id="seccion-acercaDe">
+      <div class="row contenedor-acerca-de">
+          <div class="caja-acercaDe align-middle">
+            <div class="row fila-caja-acercaDe">
+              <div class="col columna-acercaDe">
+                <div class="row titulo-acercaDe">
+                  <h2>Acerca de</h2>
+                </div>
+                <div class="row parrafo-acercaDe">
+                  <p>Juego en realidad virtual con el objetivo de enseñar temas educativos al mismo tiempo en que juegan en un mundo ambientado en peleas de Robots. Se enseñará al jugador temas como tiro parabólico y programación gráfica en un juego por turnos en el que la meta del jugador es acabar con el robot oponente. Se cuenta con la opción de multijugador para que más personas puedan aprender disfrutando en el mismo dispositivo.</p>
+                </div>
+              </div>
+              <div class="col columna-acercaDe">
+                <div class="imagen-acercaDe">
+                  <img src="assets/img/robot1.jpg" alt="comprobante">
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+    <script>
+    $(document).ready(function(){
+      $(window).scroll(function(){
+        var scroll = $(window).scrollTop();
+        if (scroll > 300) {
+          $(".black").css("background" , "blue");
+        }
+    
+        else{
+          $(".black").css("background" , "#333");  	
+        }
+      })
+    })
+  </script>
+  </body>
