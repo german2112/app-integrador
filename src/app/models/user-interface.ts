@@ -5,5 +5,5 @@ export interface UserInterface{
     photoUrl? :string;
     password?: string;
     level?: number;
-    score?: number;
+    scores?: Array<number>;
 }

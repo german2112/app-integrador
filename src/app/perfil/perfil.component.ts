@@ -16,7 +16,7 @@ export class PerfilComponent implements OnInit {
     email : '',
     photoUrl : '',
     level : 0.0,
-    score: 0.0,
+    scores: [],
   }
 
   ngOnInit() {
@@ -26,7 +26,7 @@ export class PerfilComponent implements OnInit {
         this.user.email = user.email;
         this.user.photoUrl = user.photoURL;
         this.user.level = 0;
-        this.user.score = 0;
+        this.user.scores = [];
       }
     })
   }

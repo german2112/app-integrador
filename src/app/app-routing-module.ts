@@ -5,6 +5,7 @@ import { LandingComponent } from './landing/landing.component'
 import { RegistroComponent } from './registro/registro.component';
 import { PerfilComponent } from './perfil/perfil.component';
 import { LeaderboardsComponent } from './leaderboards/leaderboards.component';
+
 const routes: Routes = 
 [
   {path: '', component:LandingComponent},
@@ -16,7 +17,7 @@ const routes: Routes =
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {useHash:true})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

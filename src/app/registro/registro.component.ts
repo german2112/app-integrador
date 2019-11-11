@@ -10,6 +10,7 @@ import { Router } from '@angular/router';
 export class RegistroComponent implements OnInit {
   public email: string;
   public password: string;
+  public nombre: string;
   constructor(
     public authService: AuthService,
     public router : Router
@@ -18,11 +19,10 @@ export class RegistroComponent implements OnInit {
   ngOnInit() {
   }
 
-  onSubmitAddUser(value){
+  onSubmitAddUser(){
     this.authService.registerUser(this.email,this.password)
     .then( (res) =>{
       this.router.navigate(['/login']);
-      this.authService.createUser(value);
     }).catch( (err)=>{
       console.log(err);
     });

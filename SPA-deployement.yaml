@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app-integrador
+spec:
+  selector:
+    matchLabels:
+      app: angular
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app : angular  
+    spec:
+      containers:
+        - name: angular
+          image: app-integrador:v1
+          imagePullPolicy: Always
+          ports:
+          - containerPort: 80
